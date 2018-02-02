@@ -1,0 +1,6 @@
+framework module Pods_SmackFinalApp {
+  umbrella header "Pods-SmackFinalApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

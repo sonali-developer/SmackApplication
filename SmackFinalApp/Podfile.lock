@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.0.1)
+  - Socket.IO-Client-Swift (8.1.1)
+  - SwiftyJSON (3.1.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Socket.IO-Client-Swift
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Socket.IO-Client-Swift: 5c18fa2af9df8a19d20e4df815141103c1f7079b
+  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
+
+PODFILE CHECKSUM: cc1de8271c1997f33363b392d594d37beeca22a0
+
+COCOAPODS: 1.2.0
