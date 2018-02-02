@@ -9,9 +9,11 @@
 import UIKit
 
 class ChatViewController: UIViewController {
-
     //Outlets
     @IBOutlet weak var menuBtn: UIButton!
+    
+    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()

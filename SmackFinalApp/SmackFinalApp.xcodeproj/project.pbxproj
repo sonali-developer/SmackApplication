@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B562622202465B700CF427A /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B562621202465B700CF427A /* CreateAccountViewController.swift */; };
 		3B8F52892021077600AD0AD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8F52882021077600AD0AD6 /* AppDelegate.swift */; };
 		3B8F528E2021077600AD0AD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8F528C2021077600AD0AD6 /* Main.storyboard */; };
 		3B8F52902021077600AD0AD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8F528F2021077600AD0AD6 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B562621202465B700CF427A /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		3B8F52852021077600AD0AD6 /* SmackFinalApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmackFinalApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B8F52882021077600AD0AD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3B8F528D2021077600AD0AD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				3B8F52A220210ACA00AD0AD6 /* ChatViewController.swift */,
 				3B8F52A420210AD800AD0AD6 /* ChannelViewController.swift */,
 				3B8F52AD20244BD600AD0AD6 /* LoginViewController.swift */,
+				3B562621202465B700CF427A /* CreateAccountViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				3B8F52A72023EAE600AD0AD6 /* Gradient.swift in Sources */,
 				3B8F52892021077600AD0AD6 /* AppDelegate.swift in Sources */,
 				3B8F52A320210ACA00AD0AD6 /* ChatViewController.swift in Sources */,
+				3B562622202465B700CF427A /* CreateAccountViewController.swift in Sources */,
 				3B8F52A520210AD800AD0AD6 /* ChannelViewController.swift in Sources */,
 				3B8F529E2021093600AD0AD6 /* SWRevealViewController.m in Sources */,
 				3B8F52AC20241A6F00AD0AD6 /* Constants.swift in Sources */,
