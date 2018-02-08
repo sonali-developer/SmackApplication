@@ -8,7 +8,19 @@
 
 import Foundation
 
+typealias CompletionHandler = (_ Success: Bool) -> ()
+
+// URL constants
+let BASE_URL = "https://chattychatsp.herokuapp.com/v1/"
+let BASE_URL_1 = "https://localhost:3005/v1"
+let URL_REGISTER = "\(BASE_URL_1)account/register"
+let URL_REGISTER_TEST = "http://localhost:3005/v1/account/register"
 //Segues
 let TO_LOGIN = "toLogin"
-let TO_CREATE_ACCOUNT = "toCreateAccount"
+let TO_CREATE_ACCOUNT = "toCreateAccnt"
 let UNWIND = "unwindToChannel"
+
+// User Defaults
+let TOKEN_KEY = "token"
+let LOGGED_IN_KEY = "loggedIn"
+let USER_EMAIL = "userEmail"
