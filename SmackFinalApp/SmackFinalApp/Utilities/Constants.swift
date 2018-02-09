@@ -15,6 +15,7 @@ let BASE_URL = "https://chattychatsonaliapi.herokuapp.com/v1/"
 let BASE_URL_1 = "https://localhost:3005/v1"
 let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_REGISTER_TEST = "http://localhost:3005/v1/account/register"
+let URL_LOGIN = "\(BASE_URL)account/login"
 //Segues
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccnt"
@@ -24,3 +25,9 @@ let UNWIND = "unwindToChannel"
 let TOKEN_KEY = "token"
 let LOGGED_IN_KEY = "loggedIn"
 let USER_EMAIL = "userEmail"
+
+
+// Headers
+let HEADER = [
+    "Content-type": "application/json; charset=utf-8"
+]
