@@ -50,9 +50,9 @@ class AuthService {
             "email": lowerCaseEmail, "password": password
         ]
         
-        Alamofire.request(URL_REGISTER_TEST, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseString { (response) in
+        Alamofire.request(URL_REGISTER, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header).responseString { (response) in
             if response.result.error == nil {
-                print(response.data)
+                print(response.data!)
                completion(true)
             }
             else {
