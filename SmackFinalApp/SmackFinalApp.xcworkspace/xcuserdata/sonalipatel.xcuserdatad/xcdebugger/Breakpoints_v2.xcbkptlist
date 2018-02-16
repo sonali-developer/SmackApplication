@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SmackFinalApp/Controller/LoginViewController.swift"
-            timestampString = "540106529.659844"
+            timestampString = "540439078.3206739"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "createAccntPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>

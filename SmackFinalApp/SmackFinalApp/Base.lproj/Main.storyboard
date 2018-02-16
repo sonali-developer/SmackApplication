@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -212,7 +212,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="250" id="hXL-gn-ytA"/>
                                         </constraints>
-                                        <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.2901960784" green="0.30196078430000001" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -273,6 +273,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="vd6-h6-5uE" eventType="touchUpInside" id="61t-Om-8Qa"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Ev3-Dw-xv2">
                                 <rect key="frame" x="126.5" y="80" width="122.5" height="40"/>
@@ -291,17 +294,23 @@
                                     <constraint firstItem="4g2-bP-4lo" firstAttribute="centerY" secondItem="sc8-zf-7nn" secondAttribute="centerY" id="YHS-t2-1vN"/>
                                 </constraints>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="WzP-bv-8Lm">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ev3-Dw-xv2" firstAttribute="top" secondItem="TZv-rW-xeQ" secondAttribute="top" constant="60" id="2XJ-gq-APJ"/>
                             <constraint firstItem="KlQ-3l-7FJ" firstAttribute="centerX" secondItem="CuD-vM-nfr" secondAttribute="centerX" id="3su-lV-Hqo"/>
+                            <constraint firstItem="WzP-bv-8Lm" firstAttribute="centerY" secondItem="CuD-vM-nfr" secondAttribute="centerY" constant="-100" id="93L-Hg-V5T"/>
                             <constraint firstItem="KlQ-3l-7FJ" firstAttribute="top" secondItem="Ev3-Dw-xv2" secondAttribute="bottom" constant="40" id="LNv-D5-Bcb"/>
                             <constraint firstItem="KlQ-3l-7FJ" firstAttribute="centerX" secondItem="CuD-vM-nfr" secondAttribute="centerX" id="ULg-6N-gaa"/>
                             <constraint firstItem="gYW-cY-5Ih" firstAttribute="centerX" secondItem="CuD-vM-nfr" secondAttribute="centerX" id="VA8-Pz-6JJ"/>
                             <constraint firstItem="xst-Tq-NkW" firstAttribute="top" secondItem="KlQ-3l-7FJ" secondAttribute="bottom" constant="40" id="WCY-jP-22P"/>
                             <constraint firstItem="xst-Tq-NkW" firstAttribute="top" secondItem="KlQ-3l-7FJ" secondAttribute="bottom" constant="40" id="Wwc-n4-dXX"/>
                             <constraint firstItem="Ev3-Dw-xv2" firstAttribute="centerX" secondItem="CuD-vM-nfr" secondAttribute="centerX" id="bjI-b6-S3d"/>
+                            <constraint firstItem="WzP-bv-8Lm" firstAttribute="centerX" secondItem="CuD-vM-nfr" secondAttribute="centerX" id="cKg-7m-iB9"/>
                             <constraint firstItem="gYW-cY-5Ih" firstAttribute="top" secondItem="xst-Tq-NkW" secondAttribute="bottom" id="kp4-vM-2DE"/>
                             <constraint firstItem="xst-Tq-NkW" firstAttribute="centerX" secondItem="CuD-vM-nfr" secondAttribute="centerX" id="mq7-3h-UEB"/>
                             <constraint firstItem="TZv-rW-xeQ" firstAttribute="trailing" secondItem="dwC-LU-ns1" secondAttribute="trailing" constant="8" id="rCo-lK-B1P"/>
@@ -311,6 +320,9 @@
                         <viewLayoutGuide key="safeArea" id="TZv-rW-xeQ"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="oiv-mm-ZCz" id="LDP-qE-D90"/>
+                        <outlet property="spinner" destination="WzP-bv-8Lm" id="EDq-Dx-nHp"/>
+                        <outlet property="usernameTxt" destination="0qe-ec-x22" id="sRR-jx-JeZ"/>
                         <segue destination="j2I-HM-YP5" kind="show" identifier="toCreateAccnt" id="cyU-gF-ny9"/>
                     </connections>
                 </viewController>
