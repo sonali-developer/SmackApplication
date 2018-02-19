@@ -30,6 +30,13 @@ class ChannelViewController: UIViewController, UITableViewDelegate, UITableViewD
         setUpUserInfo()
     }
     
+    
+    @IBAction func addChannelBtnPressed(_ sender: Any) {
+        let addChannel = AddChannelViewController()
+        addChannel.modalPresentationStyle = .custom
+        present(addChannel, animated: true, completion: nil)
+    }
+    
     @IBAction func loginBtnPressed(_ sender: Any) {
         if AuthService.instance.isLoggedIn {
             // Show profile page

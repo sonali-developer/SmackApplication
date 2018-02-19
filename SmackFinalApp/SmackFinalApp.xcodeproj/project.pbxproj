@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3B562622202465B700CF427A /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B562621202465B700CF427A /* CreateAccountViewController.swift */; };
+		3B5A1F85203AECC200D28F5E /* AddChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A1F83203AECC200D28F5E /* AddChannelViewController.swift */; };
+		3B5A1F86203AECC200D28F5E /* AddChannelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5A1F84203AECC200D28F5E /* AddChannelViewController.xib */; };
 		3B682CD6203AA869002B7961 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B682CD5203AA868002B7961 /* MessageService.swift */; };
 		3B682CD8203AA8A9002B7961 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B682CD7203AA8A9002B7961 /* Channel.swift */; };
 		3B682CDA203AC5A1002B7961 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B682CD9203AC5A1002B7961 /* ChannelCell.swift */; };
@@ -34,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		3B562621202465B700CF427A /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		3B5A1F83203AECC200D28F5E /* AddChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelViewController.swift; sourceTree = "<group>"; };
+		3B5A1F84203AECC200D28F5E /* AddChannelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelViewController.xib; sourceTree = "<group>"; };
 		3B682CD5203AA868002B7961 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		3B682CD7203AA8A9002B7961 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		3B682CD9203AC5A1002B7961 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 				3B562621202465B700CF427A /* CreateAccountViewController.swift */,
 				3B9C05FF202E3E760047306F /* AvatarPickerViewController.swift */,
 				3B9C0605203160FD0047306F /* ProfileViewController.swift */,
+				3B5A1F83203AECC200D28F5E /* AddChannelViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 		3B9C0609203161150047306F /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				3B5A1F84203AECC200D28F5E /* AddChannelViewController.xib */,
 				3B9C0606203160FD0047306F /* ProfileViewController.xib */,
 			);
 			path = XIBs;
@@ -263,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B8F52932021077600AD0AD6 /* LaunchScreen.storyboard in Resources */,
+				3B5A1F86203AECC200D28F5E /* AddChannelViewController.xib in Resources */,
 				3B8F52902021077600AD0AD6 /* Assets.xcassets in Resources */,
 				3B9C0608203160FD0047306F /* ProfileViewController.xib in Resources */,
 				3B8F528E2021077600AD0AD6 /* Main.storyboard in Resources */,
@@ -337,6 +344,7 @@
 				3B9C0600202E3E760047306F /* AvatarPickerViewController.swift in Sources */,
 				3B8F52A320210ACA00AD0AD6 /* ChatViewController.swift in Sources */,
 				3B562622202465B700CF427A /* CreateAccountViewController.swift in Sources */,
+				3B5A1F85203AECC200D28F5E /* AddChannelViewController.swift in Sources */,
 				3B9C060220301D130047306F /* AvatarCell.swift in Sources */,
 				3B8F52A520210AD800AD0AD6 /* ChannelViewController.swift in Sources */,
 				3B9C0607203160FD0047306F /* ProfileViewController.swift in Sources */,
