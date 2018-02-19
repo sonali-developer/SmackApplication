@@ -12,12 +12,13 @@ typealias CompletionHandler = (_ Success: Bool) -> ()
 
 // URL constants
 let BASE_URL = "https://chattychatsonaliapi.herokuapp.com/v1/"
-let BASE_URL_1 = "https://localhost:3005/v1"
+let BASE_URL_1 = "http://localhost:3005/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_REGISTER_TEST = "http://localhost:3005/v1/account/register"
-let URL_LOGIN = "\(BASE_URL)account/login"
-let URL_USER_ADD = "\(BASE_URL)user/add"
-let URL_USER_BY_EMAIL = "\(BASE_URL)user/byEmail/"
+let URL_LOGIN = "\(BASE_URL_1)account/login"
+let URL_USER_ADD = "\(BASE_URL_1)user/add"
+let URL_USER_BY_EMAIL = "\(BASE_URL_1)user/byEmail/"
+let URL_GET_CHANNELS = "\(BASE_URL_1)channel/"
 
 //Segues
 let TO_LOGIN = "toLogin"
