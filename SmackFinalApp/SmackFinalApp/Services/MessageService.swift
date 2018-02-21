@@ -46,7 +46,7 @@ class MessageService {
     func findAllMessagesForChannel(channelID: String, completion: @escaping CompletionHandler) {
         Alamofire.request("\(URL_GET_MESSAGES)\(channelID)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
             if response.result.error == nil {
-                self.clearMessges()
+                self.clearMessages()
                 guard let data = response.data else { return }
                 if let json = JSON(data: data).array {
                     for item in json {
@@ -72,7 +72,7 @@ class MessageService {
         }
     }
     
-    func clearMessges() {
+    func clearMessages() {
         messages.removeAll()
     }
     func clearChannels() {
