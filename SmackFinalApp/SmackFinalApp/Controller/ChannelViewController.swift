@@ -40,10 +40,11 @@ class ChannelViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     @IBAction func addChannelBtnPressed(_ sender: Any) {
         if AuthService.instance.isLoggedIn {
-        }
+        
         let addChannel = AddChannelViewController()
         addChannel.modalPresentationStyle = .custom
         present(addChannel, animated: true, completion: nil)
+        }
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
