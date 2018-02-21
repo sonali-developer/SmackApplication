@@ -11,6 +11,7 @@
 		3B5A1F85203AECC200D28F5E /* AddChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A1F83203AECC200D28F5E /* AddChannelViewController.swift */; };
 		3B5A1F86203AECC200D28F5E /* AddChannelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B5A1F84203AECC200D28F5E /* AddChannelViewController.xib */; };
 		3B5A1F88203AF8EE00D28F5E /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A1F87203AF8EE00D28F5E /* SocketService.swift */; };
+		3B5A1F8A203CE62700D28F5E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5A1F89203CE62700D28F5E /* Message.swift */; };
 		3B682CD6203AA869002B7961 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B682CD5203AA868002B7961 /* MessageService.swift */; };
 		3B682CD8203AA8A9002B7961 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B682CD7203AA8A9002B7961 /* Channel.swift */; };
 		3B682CDA203AC5A1002B7961 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B682CD9203AC5A1002B7961 /* ChannelCell.swift */; };
@@ -40,6 +41,7 @@
 		3B5A1F83203AECC200D28F5E /* AddChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelViewController.swift; sourceTree = "<group>"; };
 		3B5A1F84203AECC200D28F5E /* AddChannelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelViewController.xib; sourceTree = "<group>"; };
 		3B5A1F87203AF8EE00D28F5E /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		3B5A1F89203CE62700D28F5E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		3B682CD5203AA868002B7961 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		3B682CD7203AA8A9002B7961 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		3B682CD9203AC5A1002B7961 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				3B682CD7203AA8A9002B7961 /* Channel.swift */,
+				3B5A1F89203CE62700D28F5E /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				3B9C05FC202BE5920047306F /* RoundedButton.swift in Sources */,
 				3B8F52A72023EAE600AD0AD6 /* Gradient.swift in Sources */,
 				3B9C0604203034CE0047306F /* CircleImage.swift in Sources */,
+				3B5A1F8A203CE62700D28F5E /* Message.swift in Sources */,
 				3B682CD8203AA8A9002B7961 /* Channel.swift in Sources */,
 				3B9C05FE202D802E0047306F /* UserDataService.swift in Sources */,
 				3B682CD6203AA869002B7961 /* MessageService.swift in Sources */,
