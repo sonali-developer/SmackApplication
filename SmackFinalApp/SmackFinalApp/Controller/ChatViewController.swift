@@ -8,16 +8,21 @@
 
 import UIKit
 
-class ChatViewController: UIViewController {
+class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     //Outlets
     @IBOutlet weak var menuBtn: UIButton!
     @IBOutlet weak var channelNameLbl: UILabel!
-    
     @IBOutlet weak var messageTextBox: UITextField!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.bindToKeyboard()
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.estimatedRowHeight = 80
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
         let tap = UITapGestureRecognizer(target: self, action: #selector(ChatViewController.handleTap))
         view.addGestureRecognizer(tap)
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
@@ -69,7 +74,9 @@ class ChatViewController: UIViewController {
     func getMessages() {
         guard let channelID = MessageService.instance.selectedChannel?.id else { return }
         MessageService.instance.findAllMessagesForChannel(channelID: channelID) { (success) in
-            
+            if success {
+                 self.tableView.reloadData()
+            }
         }
     }
     
@@ -94,6 +101,23 @@ class ChatViewController: UIViewController {
         }
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "messageTableViewCell", for: indexPath) as? MessageTableViewCell {
+        let message = MessageService.instance.messages[indexPath.row]
+        cell.configureCell(message: message)
+            return cell
+        } else {
+            return MessageTableViewCell()
+        }
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return MessageService.instance.messages.count
+    }
    
 
 }
