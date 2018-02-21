@@ -24,7 +24,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
         view.bindToKeyboard()
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.estimatedRowHeight = 60
+        tableView.estimatedRowHeight = 80
         tableView.rowHeight = UITableViewAutomaticDimension
         sendBtn.isHidden = true
         
@@ -48,16 +48,7 @@ class ChatViewController: UIViewController, UITableViewDelegate, UITableViewData
                 }
             }
         }
-//        SocketService.instance.getChatMessage { (success) in
-//            if success {
-//                self.tableView.reloadData()
-//                if MessageService.instance.messages.count > 0 {
-//                    let endIndex = IndexPath(row: MessageService.instance.messages.count - 1, section: 0)
-//                    self.tableView.scrollToRow(at: endIndex, at: .bottom, animated: false)
-//                }
-//            }
-//        }
-        
+
         SocketService.instance.getTypingUsers { (typingUsers) in
             guard let channelID = MessageService.instance.selectedChannel?.id else { return }
             var names = ""

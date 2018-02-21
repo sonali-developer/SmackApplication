@@ -449,7 +449,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="GSN-LW-1wF">
-                                <rect key="frame" x="62.5" y="123" width="250" height="136"/>
+                                <rect key="frame" x="63" y="123" width="250" height="136"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vmw-w5-zcK">
                                         <rect key="frame" x="0.0" y="0.0" width="250" height="20"/>
@@ -504,9 +504,8 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ai-Hs-Zun">
-                                <rect key="frame" x="61" y="403" width="251" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ai-Hs-Zun">
+                                <rect key="frame" x="61" y="403" width="251" height="26"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <state key="normal" title="Choose Avatar">
                                     <color key="titleColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -549,7 +548,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="nI9-U3-nbj" customClass="CircleImage" customModule="SmackFinalApp" customModuleProvider="target">
-                                <rect key="frame" x="137.5" y="299" width="100" height="100"/>
+                                <rect key="frame" x="138" y="299" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="mWW-zR-bAg"/>
                                     <constraint firstAttribute="height" constant="100" id="wGQ-Bm-2Gn"/>
@@ -586,10 +585,13 @@
                             <constraint firstItem="S7z-B9-3WZ" firstAttribute="top" secondItem="nI9-U3-nbj" secondAttribute="bottom" constant="25" id="TOA-lo-ClB"/>
                             <constraint firstItem="GSN-LW-1wF" firstAttribute="centerX" secondItem="Aex-oc-9PH" secondAttribute="centerX" id="U4E-5e-9nR"/>
                             <constraint firstItem="3T0-lL-sxz" firstAttribute="centerX" secondItem="Aex-oc-9PH" secondAttribute="centerX" id="Wh1-9F-TUS"/>
+                            <constraint firstItem="3Ai-Hs-Zun" firstAttribute="centerX" secondItem="3T0-lL-sxz" secondAttribute="centerX" id="YpY-Ze-frC"/>
                             <constraint firstItem="kzJ-JV-8Pz" firstAttribute="top" secondItem="pxy-v9-WHs" secondAttribute="top" constant="8" id="bvA-Wl-tvk"/>
+                            <constraint firstItem="3Ai-Hs-Zun" firstAttribute="trailing" secondItem="3T0-lL-sxz" secondAttribute="trailing" id="cIh-mB-VUx"/>
                             <constraint firstItem="pxy-v9-WHs" firstAttribute="trailing" secondItem="kzJ-JV-8Pz" secondAttribute="trailing" constant="16" id="gXI-12-WSX"/>
                             <constraint firstItem="nI9-U3-nbj" firstAttribute="centerX" secondItem="Aex-oc-9PH" secondAttribute="centerX" id="qzq-32-bmd"/>
                             <constraint firstItem="GSN-LW-1wF" firstAttribute="top" secondItem="IWm-fk-IbB" secondAttribute="bottom" constant="40" id="rQC-jC-iFe"/>
+                            <constraint firstItem="3Ai-Hs-Zun" firstAttribute="top" secondItem="nI9-U3-nbj" secondAttribute="bottom" constant="4" id="zZH-hD-VQl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pxy-v9-WHs"/>
                     </view>

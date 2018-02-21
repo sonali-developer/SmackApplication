@@ -21,7 +21,7 @@ class ChannelViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
+        self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 80
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelViewController.userDataDidChange(_notif:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelViewController.channelsLoaded(_notif:)), name: NOTIF_CHANNELS_LOADED, object: nil)
         
